@@ -1,0 +1,9 @@
+actor: ApiTester
+modules:
+  enabled:
+    - REST:
+        url: http://192.168.33.11/graphql
+        depends: Laravel5
+    - \Helper\Api
+  config:
+    - Laravel5:
